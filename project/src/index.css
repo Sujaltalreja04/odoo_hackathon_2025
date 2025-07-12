@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+.glass-dark {
+  background: rgba(30,41,59,0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(30,41,59,0.18);
+}
+
+/* Gradient background helpers */
+.bg-animated-gradient {
+  background: linear-gradient(270deg, #6366f1, #ec4899, #a5b4fc, #f472b6, #312e81);
+  background-size: 1200% 1200%;
+  animation: gradient-x 12s ease-in-out infinite;
+}
+
+/* Animation helpers */
+.animate-fade-in {
+  animation: fadein 1s ease-in;
+}
+
+/* Hide scrollbars for a cleaner look */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
